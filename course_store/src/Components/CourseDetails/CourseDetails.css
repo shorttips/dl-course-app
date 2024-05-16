@@ -1,0 +1,19 @@
+.details
+{
+  color: white;
+ background-color: #434359;
+}
+
+.details:nth-child(odd)
+{
+  background-color: #272a3a;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+.edit-icon {
+  color: rgb(238, 170, 43);
+}
