@@ -1,8 +1,8 @@
 # dl-course-app
 ## Tech Stack
-Frontend: ReactJs
-Backend: Java-SpringBoot
-DataBase: MySQL
+- Frontend: **ReactJs**
+- Backend: **Java-SpringBoot**
+- DataBase: **MySQL**
 
 ## Deployment Process
 ### Database setup
