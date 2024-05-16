@@ -11,7 +11,8 @@ DataBase: MySQL
   - password: **your-password**
   - port: **3306**
   - Database Address: **localhost/pub-ip**
- ### Backend setup
+ ### Backend Setup
+#### backend folder: CRUD
 - Update your database details in this file
   - CRUD/src/main/resources/**application.properties**
 - Install **java-17**
@@ -21,8 +22,18 @@ DataBase: MySQL
 - Browser pub-ip:8080/api
   - you will get message: **Successfully connected to Backend!**
 - 
-### frontend
-- course_store/src/Services/FormService.jsx
-  - insted of **localhost** give backend **pub-ip**
-- course_store/src/Components/CourseDetails/CourseDetails.jsx
-  - insted of **localhost** give backend **pub-ip**
+### Frontend Setup 
+#### frontend folder: course_store
+- **course_store/src/Services/FormService.jsx**
+  - In **Line-8**: insted of **localhost** give backend **pub-ip**
+- **course_store/src/Components/CourseDetails/CourseDetails.jsx**
+  - In **Line-13** insted of **localhost** give backend **pub-ip**
+- Install **Node-20** version
+- build tool is **npm**
+- Output folder **dist**
+- install nginx and copy **dist** folder files to **nginx root directory**
+
+
+
+
+
