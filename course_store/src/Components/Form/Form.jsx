@@ -5,6 +5,8 @@ import "./Form.css";
 import { newCourse } from "../../Services/FormService";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from "axios";
+import { baseURL } from "../../Services/BaseURL";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -29,6 +31,18 @@ export default function Form() {
       console.log(error);
     }
   };
+
+  const connect =async () =>{
+    try{
+      const response = await axios.get(`${baseURL}api`)
+      toast.success(response.data);
+      console.log(response);
+    } catch(error)
+    {
+      toast.error(response.data);
+      console.log(error);
+    }
+  }
 
   return (
     <>
@@ -101,7 +115,7 @@ export default function Form() {
                   <button onClick={postData} className="btn btn-primary">
                     <FontAwesomeIcon icon={faPlus} />
                   </button>
-                  <button className="btn btn-success">
+                  <button className="btn btn-success" onClick={connect} >
                     <FontAwesomeIcon icon={faArrowsRotate} />
                   </button>
                   <button className="btn btn-warning">
