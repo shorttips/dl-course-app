@@ -1,9 +1,7 @@
-import axios from "axios";
-import React from "react";
+import axios from 'axios';
 import { baseURL } from './BaseURL';
 
 export const deleteCourse = async (courseId) => {
-  console.log(courseId);
   try {
     const response = await axios.delete(`${baseURL}deleteCourse/${courseId}`);
     return response.data;
